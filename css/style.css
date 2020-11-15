@@ -1,0 +1,143 @@
+*, :before,:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    height:100vh;
+    width:100%;
+    margin:0;
+    padding:0;
+    background-size: cover;
+    background:url('../img/tim-stief-YFFGkE3y4F8-unsplash.jpg');
+    background-repeat: no-repeat;
+    
+}
+
+main {
+    height:100vh;
+    width:100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width:80%;
+    position:relative;
+}
+.form label i {
+    position: absolute;
+    top:15px;
+    left:20px;
+    color:rgb(151, 146, 146);
+}
+
+#btn-submit {
+    border:none;
+    background: rgb(9, 54, 75,0.8);
+    padding:1rem;
+    color:rgb(243, 243, 243);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 1rem;
+    outline: none;
+    cursor:pointer;
+    width:100%;
+}
+
+#btn-submit:hover {
+    background: rgb(9, 54, 75,1);
+    color:#fff;
+}
+
+#city {
+    border:none;
+    background: rgba(22,22,22,0.7);
+    padding:1rem;
+    padding-left : 80px;
+    color:rgb(255, 255, 255);
+    border-radius: 1rem;
+    outline: none;
+    width:100%;
+    margin-bottom: 1rem;
+
+}
+::placeholder {
+    color:#fff
+}
+
+#content {
+    width: 380px;
+    height:380px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    color:#fff;
+    margin-top:2rem;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+#content div {
+    
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size:1rem;
+    
+    
+}
+
+
+
+#div-city {
+    background:rgb(15, 206, 206,0.7);
+    text-align:center   
+}
+#div-city h2 {
+    font-size:1rem
+}
+#div-sky {
+    background:rgb(98, 104, 104,0.7);
+    text-align:center
+    
+}
+#div-sky h2 {
+    font-size:1rem
+}
+#div-country {
+    background:rgb(170, 42, 159,0.7);
+    text-align:center
+
+}
+#div-country h2 {
+    font-size:2rem;
+    background: linear-gradient(rgba(0,0,0,.1) , rgba(0,0,0,.4));
+    border-radius:50%;
+    display:block;
+    padding: 2rem;
+}
+#div-temp {
+    background:rgb(30, 187, 101,0.7);
+    text-align:center;
+    padding:0;
+
+}
+#div-temp h2 {
+    font-size:3rem;
+    text-align:center;
+    padding:0;
+    margin-left:auto;
+    margin-right:auto;
+
+}
